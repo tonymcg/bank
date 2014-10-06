@@ -7,15 +7,11 @@ class ATMOperations(unittest2.TestCase):
 
     def setUp(self):
         self.balance = 1000
-	self.acc = account.Account("Anthony","McGlone",10000)
-	f = account.Account("Anthony","McG",10000)
-	print f
-	f.withdraw(500)
 
     def test_withdraw_operation(self):
-	#self.acc.withraw(500)
-	#self.assertEquals(500, self.acc.get_balance())
-	l = []
+	f = account.Account("Anthony","McG",1000)
+	f.withdraw(500)
+	self.assertEquals(500, f.get_balance())
 
 if __name__ == '__main__':
     unittest2.main()

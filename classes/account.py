@@ -5,4 +5,8 @@ class Account:
 	self.balance = balance
 
     def withdraw(self, withdrawal_amount):
-	self.balance = self.balance - withdrawal_amount	
+	self.balance = self.balance - withdrawal_amount
+
+    def get_balance(self):
+	return self.balance	
+
