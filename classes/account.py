@@ -3,6 +3,7 @@ class Account:
         self.first_name = first_name
 	self.last_name = last_name
 	self.balance = balance
+	self.biglist =[]
 
     def withdraw(self, withdrawal_amount):
 	if withdrawal_amount > self.balance:
