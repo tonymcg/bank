@@ -16,3 +16,6 @@ class Account:
     def deposit(self, deposit_amount):
 	self.balance = self.balance + deposit_amount	
 
+    def saver_account(self):
+        pass
+
